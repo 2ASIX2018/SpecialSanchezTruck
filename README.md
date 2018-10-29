@@ -19,4 +19,4 @@ L'aplicació farà ús de dos taules per a gestionar els accessoris i productes,
 
 L'esquema de la base de dades és la següent:
 
-![Base de dades](imgread/bd.png)
+![Base de dades](imgread/bd.PNG)
