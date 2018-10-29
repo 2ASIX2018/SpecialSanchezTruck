@@ -16,3 +16,7 @@
 L'aplicació farà ús de dos taules per a gestionar els accessoris i productes, altres dos per a gestionar els exemples de decorats de la base de dades, i altra taula per a gestionar els usuaris.
 
 #### 2.1. Descripció de la base de dades
+
+L'esquema de la base de dades és la següent:
+
+![Base de dades](imgread/bd.png)
