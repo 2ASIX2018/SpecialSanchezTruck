@@ -23,7 +23,7 @@ L'esquema de la base de dades és la següent:
 
 #### 2.2. Descripció de la interfície
 
-![Pàgina Principal](imgread/principal.png)
-![Pàgina Productos](imgread/Productes.png)
-![Pàgina Decorados](imgread/Decorados.png)
-![Pàgina Login](imgread/login.png)
+![Pàgina Principal](imgread/principal.PNG)
+![Pàgina Productos](imgread/Productes.PNG)
+![Pàgina Decorados](imgread/Decorados.PNG)
+![Pàgina Login](imgread/login.PNG)
