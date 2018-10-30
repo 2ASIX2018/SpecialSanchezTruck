@@ -40,3 +40,10 @@ Les diferents pàgines què tindra la pagina web.
 * **Pàgina Access de Usuaris**:
 
 ![Pàgina Login](imgread/login.PNG)
+
+### 3. Tasques a realitzar i calendarització
+
+| Tasca | Dates de realització |
+|------|-------------|
+| Creació del esquema de la base de dades | del 26/10 al 29/10 |
+| Creacio de exemples de vistes de les diferent pagines |del 29/10 al 30/10  |
