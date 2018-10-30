@@ -22,3 +22,8 @@ L'esquema de la base de dades és la següent:
 ![Base de dades](imgread/bd.PNG)
 
 #### 2.2. Descripció de la interfície
+
+![Pàgina Principal](imgs/principal.png)
+![Pàgina Productos](imgs/Productes.png)
+![Pàgina Decorados](imgs/Decorados.png)
+![Pàgina Login](imgs/login.png)
