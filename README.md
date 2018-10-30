@@ -23,7 +23,20 @@ L'esquema de la base de dades és la següent:
 
 #### 2.2. Descripció de la interfície
 
+Les diferents pàgines què tindra la pagina web.
+
+* **Pàgina inicial**: Mostrara les novetats tant de productes com de decorats de camions.
+
 ![Pàgina Principal](imgread/principal.PNG)
+
+* **Pàgina Productes**: Es ahon estaran tots els productes que estiguen a la venta o proximament estiguen.
+
 ![Pàgina Productos](imgread/Productes.PNG)
+
+* **Pàgina Decorats**: Estaran tots els decorats publicats.
+
 ![Pàgina Decorados](imgread/Decorados.PNG)
+
+* **Pàgina Access de Usuaris**:
+
 ![Pàgina Login](imgread/login.PNG)
