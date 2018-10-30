@@ -47,5 +47,5 @@ Les diferents pàgines què tindra la pagina web.
 |------|-------------|
 | Creació de les diferents pagines | del 29/10 al 5/11 |
 | Donarli una apareça millor |del 29/10 al 5/11  |
-| Anyadir una pagina de registres per usuari i controlar les sessions |del 5/11 al 18/11  |
+| Anyadir una pagina de registres per a usuari i controlar les sessions |del 5/11 al 18/11  |
 | Pulir la base de dades i crearla |del 10/11 al 20/11  |
