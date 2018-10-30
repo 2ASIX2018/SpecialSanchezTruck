@@ -45,5 +45,7 @@ Les diferents pàgines què tindra la pagina web.
 
 | Tasca | Dates de realització |
 |------|-------------|
-| Creació del esquema de la base de dades | del 26/10 al 29/10 |
-| Creacio de exemples de vistes de les diferent pagines |del 29/10 al 30/10  |
+| Creació de les diferents pagines | del 29/10 al 5/11 |
+| Donarli una apareça millor |del 29/10 al 5/11  |
+| Anyadir una pagina de registres per usuari i controlar les sessions |del 5/11 al 18/11  |
+| Pulir la base de dades i crearla |del 10/11 al 20/11  |
