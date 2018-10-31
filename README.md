@@ -4,10 +4,10 @@
 
 ### 1. Introducció
 
-* **Títol del projecte**: SpecialSanchezTruck
+* **Títol del projecte **: SpecialSanchezTruck
 * **Objectius**: 
-  * Desenvolupar una aplicació amb una tenda online de productes i accessoris per a decorar camions i tambe d'exemples de decorats de camions i una descripcio.
-* **Descripció**: El projecte que plantege, SpecialSanchezTruck és una tenda online orientada a la venta de productes i accessoris per a camions. Tambe hi haura una part de notícies amb decorats de exemple.
+  *Desenvolupar una aplicació amb una tenda online de productes i accessoris per a decorar camions i també d'exemples de decorats de camions i una descripció.
+* **Descripció**: El projecte que plantege, SpecialSanchezTruck és una tenda online orientada a la venta de productes i accessoris per a camions. També hi haurà una part de notícies amb decorats de exemple.
 * **Desenvolupador**: @sanchezasix
 * **Adreça web en Github:** https://github.com/2ASIX2018/SpecialSanchezTruck
 
@@ -29,7 +29,7 @@ Les diferents pàgines què tindra la pagina web.
 
 ![Pàgina Principal](imgread/principal.PNG)
 
-* **Pàgina Productes**: Es ahon estaran tots els productes que estiguen a la venta o proximament estiguen.
+* **Pàgina Productes**: Es ah on estaran tots els productes que estiguen a la venta o proximament estiguen.
 
 ![Pàgina Productos](imgread/Productes.PNG)
 
@@ -37,11 +37,11 @@ Les diferents pàgines què tindra la pagina web.
 
 ![Pàgina Decorados](imgread/Decorados.PNG)
 
-* **Pàgina Access de Usuaris**:
+* **Pàgina Accés de Usuaris**:
 
 ![Pàgina Login](imgread/login.PNG)
 
-### 3. Tasques a realitzar i calendarització
+### 3. Tasques a realitzar i calendari previst
 
 | Tasca | Dates de realització |
 |------|-------------|
