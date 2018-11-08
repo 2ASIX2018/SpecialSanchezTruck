@@ -18,7 +18,7 @@
               <a class="nav-link" href="prindecorados.php">Decorados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.php">Acceder</a> 
+              <a class="nav-link" href="loginForm.php">Acceder</a> 
             </li>
           </ul>
         </div>
