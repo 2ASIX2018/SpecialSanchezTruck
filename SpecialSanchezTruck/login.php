@@ -16,21 +16,28 @@ if ($passw=="1234" && in_array($user, $usuaris)) {
 
     $_SESSION['username']=$user;
     
-    if ($user=="admin")
+    if ($user=="admin") {
         $_SESSION['role']="admin";
-    else if ($user=="user")
+    } else if ($user=="user") {
         $_SESSION["role"]="user";
+    }
 
-    if ($recordar=="recuerdame"){
+    if ($recordar=="recuerdame") {
 
         setcookie('SstUser', $_SESSION['username'], time() + 365 * 24 * 60 * 60);
         setcookie('SstUser', $_SESSION['role'], time() + 365 * 24 * 60 * 60);
     
     }
 
+    header("Location: index.php");
+
+} else {
+
+    header("Location: registro.php");
+
 }
 
-header("Location: index.php")
+
 
 
 

@@ -1,3 +1,54 @@
+<?php
+
+  session_start();
+
+  $user="Anonimo";
+  $role="";
+
+  if (isset($_SESSION['username'])) {
+
+    $user=$_SESSION['username'];
+
+    if (isset($_SESSION['role']) && $_SESSION['role']=="admin")
+    {
+      
+      $role="(admin)";
+
+    } else { 
+      
+      $role="";
+
+    }
+
+  } else if (isset($_COOKIE['SstUser'])) {
+
+      $_SESSION['username'] = $_COOKIE['SstUser'];
+
+      if (isset($_COOKIE['SstUser']))
+      {
+      
+        $_SESSION['role'] = $_COOKIE['SstUser'];
+
+      }
+      if ($_SESSION['role']=="admin")
+      {
+
+        $role="(admin)";
+
+      } else {
+
+        $role="";
+
+      }
+      
+      $user=$_SESSION['username']; 
+
+  }
+
+  $userLabel=$user.$role;
+?>
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.php">Special Sanchez Truck</a>
@@ -14,12 +65,18 @@
             <li class="nav-item">
               <a class="nav-link" href="prinproductos.php">Productos</a>
             </li>
-            <li class="nav-item">
+            
+            <?php if(isset($_SESSION['username'])) { ?>
+            
+              <li class="nav-item">
               <a class="nav-link" href="prindecorados.php">Decorados</a>
             </li>
+
+            <?php } ?>     
+
             <li class="nav-item">
               <a class="nav-link" href="loginForm.php">Acceder</a> 
-            </li>
+            </li>            
           </ul>
         </div>
       </div>
