@@ -34,7 +34,7 @@
                     <input type="password" name="inputPassword" class="form-control" placeholder="Contraseña" required>
                     <div id="remember" class="checkbox">
                         <label>
-                            <input type="checkbox" value="recuerdame" name="recuerdame"> Recordarme
+                            <input type="checkbox" value="recuerdame" name="recuerdame"> Recuerdarme
                         </label>
                     </div>
                     <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Acceder</button>

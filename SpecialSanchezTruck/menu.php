@@ -5,47 +5,27 @@
   $user="Anonimo";
   $role="";
 
-  if (isset($_SESSION['username'])) {
+  if (isset($_SESSION['username'])){
 
     $user=$_SESSION['username'];
 
-    if (isset($_SESSION['role']) && $_SESSION['role']=="admin")
-    {
-      
-      $role="(admin)";
+    if (isset($_SESSION['role']) && $_SESSION['role']=="admin") $role="(admin)"; 
+    
+    else  $role="";
 
-    } else { 
-      
-      $role="";
-
-    }
-
-  } else if (isset($_COOKIE['SstUser'])) {
+  } else if (isset($_COOKIE['SstUser'])){
 
       $_SESSION['username'] = $_COOKIE['SstUser'];
 
-      if (isset($_COOKIE['SstUser']))
-      {
-      
-        $_SESSION['role'] = $_COOKIE['SstUser'];
+      if (isset($_COOKIE['SstUser'])) $_SESSION['role'] = $_COOKIE['SstUser'];
 
-      }
-      if ($_SESSION['role']=="admin")
-      {
-
-        $role="(admin)";
-
-      } else {
-
-        $role="";
-
-      }
+      if ($_SESSION['role']=="admin") $role="(admin)"; else $role="";
       
       $user=$_SESSION['username']; 
 
   }
 
-  $userLabel=$user.$role;
+  $nomusu=$user#.$role;
 ?>
 
 
@@ -66,17 +46,34 @@
               <a class="nav-link" href="prinproductos.php">Productos</a>
             </li>
             
-            <?php if(isset($_SESSION['username'])) { ?>
+            <?php 
+
+              if(isset($_SESSION['username'])){ ?>
             
               <li class="nav-item">
-              <a class="nav-link" href="prindecorados.php">Decorados</a>
-            </li>
+                <a class="nav-link" href="prindecorados.php">Decorados</a>
+              </li>
 
             <?php } ?>     
 
+            <?php if($user=="Anonimo"){ ?>
+              <li class="nav-item">
+                <a class="nav-link" href="loginForm.php">Acceder</a>
+              </li>
+            <?php } else { ?>
+              <li class="nav-item">
+                <a class="nav-link" href="logout.php">Cerrar Session</a>
+              </li>
+            <?php } ?>
+
+            <?php if($user!="Anonimo"){ ?> 
             <li class="nav-item">
-              <a class="nav-link" href="loginForm.php">Acceder</a> 
-            </li>            
+                <a class="nav-link" href="#">
+                  <?php echo($nomusu) ?>
+                </a>
+              </li>
+            <?php } ?>
+                        
           </ul>
         </div>
       </div>
