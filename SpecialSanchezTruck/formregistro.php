@@ -1,4 +1,4 @@
-<form action="datosregistro.php" method="get">
+<form action="datosregistro.php" method="post">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Nombre Usuario</label>

@@ -46,15 +46,19 @@
               <a class="nav-link" href="prinproductos.php">Productos</a>
             </li>
             
-            <?php 
-
-              if(isset($_SESSION['username'])){ ?>
+            <!--?php if(isset($_SESSION['username'])){ ?-->
             
               <li class="nav-item">
                 <a class="nav-link" href="prindecorados.php">Decorados</a>
               </li>
 
-            <?php } ?>     
+            <!--?php } ?-->
+            
+            <?php if($role=="(admin)"){ ?> 
+            <li class="nav-item">
+                <a class="nav-link" href="introdprod.php">Introducir Productos</a>
+              </li>
+            <?php } ?>
 
             <?php if($user=="Anonimo"){ ?>
               <li class="nav-item">
@@ -73,6 +77,8 @@
                 </a>
               </li>
             <?php } ?>
+
+
                         
           </ul>
         </div>
