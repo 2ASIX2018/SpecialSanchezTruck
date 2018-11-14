@@ -87,7 +87,7 @@ Les diferents pàgines què tindra la pagina web.
     
 ### Control de usuaris registrats.
 
-* **Si introduim un usuari que no esta registrat: **
+* **Si introduim un usuari que no esta registrat:**
 
     ![Pàgina UsuarioError](imgread/usuarioerror.png)
 
