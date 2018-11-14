@@ -91,7 +91,7 @@ Les diferents pàgines què tindra la pagina web.
 
     ![Pàgina UsuarioError](imgread/usuarioerror.png)
 
-  ** Ens apareixera el següent error**
+  **Ens apareixera el següent error**
 
     ![Pàgina ErrorUsuario](imgread/errorusuario.png)
 
