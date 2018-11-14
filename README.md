@@ -61,6 +61,8 @@ Les diferents pàgines què tindra la pagina web.
 
 * **Tancament de session**
 
+### Pagina de inici per a usuaris no registrats.
+* **Tindran la opcio de accedir per poder entrar a la pagina de login**
 ![Pàgina Anonimo](imgread/paganonimo.png)
 
 ![Pàgina EntrarFormReg](imgread/entrarformreg.png)
