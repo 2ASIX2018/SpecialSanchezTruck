@@ -49,27 +49,27 @@ Les diferents pàgines què tindra la pagina web.
     * **Pagines que s'adapten segons el usuari**
 
 * **Formulari de registre:**
-    * **Comprobacions de dades de introduccio**
+    * **Comprovacions de dades de introducció**
     * **Pagina que rep les dades del formulari de registre**
 
 * **Formulari de login**
-    * **Comprobacions de usuaris**
+    * **Comprovacions de usuaris**
 
-* **Formulari de introduccio de productes**
-    * **Comprobacions de dades de introduccio**
-    * **Pagina que rep les dades del formulari de introduccio de productes**
+* **Formulari de introducció de productes**
+    * **Comprovacions de dades de introducció**
+    * **Pagina que rep les dades del formulari de introducció de productes**
 
-* **Tancament de session**
+* **Tancament de sessions**
 
 ### Pagina de inici per a usuaris no registrats.
 
-* **Tindran l'opcio de accedir per poder entrar a la pagina de login**
+* **Tindran l'opció de accedir per poder entrar a la pagina de login**
 
     ![Pàgina Anonimo](imgread/paganonimo.png)
 
 ### Pagina de inici login (formulari de login).
 
-* **Per a usuaris no registrats esta disponible la opcio "No estas registrado?" per accedir al formulari de registre**
+* **Per a usuaris no registrats esta disponible la opció "No estas registrado?" per accedir al formulari de registre**
 
     ![Pàgina EntrarFormReg](imgread/entrarformreg.png)
     
@@ -81,39 +81,61 @@ Les diferents pàgines què tindra la pagina web.
 
     ![Pàgina FormRegLLeno](imgread/formreglleno.png)
 
-* **Una vegada tots els camps requerits estan plens i prisionem en "Registrarse" se enviaran les dades a una pagina de recollida de dades**
+* **Una vegada tots els camps requerits estan plens i pressionem en "Registrarse" se enviaran les dades a una pagina de recollida de dades**
 
     ![Pàgina RecogidaFormReg](imgread/recformreg.png)
     
 ### Control de usuaris registrats.
 
-* **Si introduim un usuari que no esta registrat:**
+* **Si introduïm un usuari que no esta registrat:**
 
     ![Pàgina UsuarioError](imgread/usuarioerror.png)
 
-  **Ens apareixera el següent error**
+  **Ens apareixerà el següent error amb la opció de pressionar en "Volver a intentar" redireccionara a la pagina de login**
 
     ![Pàgina ErrorUsuario](imgread/errorusuario.png)
 
-![Pàgina UsuarioPrueba](imgread/usuarioprueba.png)
+* **Si introduïm un usuari que esta registrat:**
 
-![Pàgina LogUsuPrueba](imgread/loginusuarioprueba.png)
+    ![Pàgina UsuarioPrueba](imgread/usuarioprueba.png)
 
-![Pàgina UsuarioAdmin](imgread/usuarioadmin.png)
+* **Si el usuari es de rol user o lo que es el mateix un usuari registrat normal apareixeran aquestes opcions:**
 
-![Pàgina LogUsuAdmin](imgread/menuadmin.png)
+    ![Pàgina LogUsuPrueba](imgread/loginusuarioprueba.png)
 
-![Pàgina FormIntrProd](imgread/formintrodprod.png)
+* **Usuari Admin o usuari amb rol admin:**
 
-![Pàgina FormIntrProdLleno](imgread/formintrodprodlleno.png)
+    ![Pàgina UsuarioAdmin](imgread/usuarioadmin.png)
 
-![Pàgina RecogidaFormIntrProd](imgread/recformintrodprod.png)
+  **Si el usuari es de rol admin apareixera la opció "Introducir Productos" que es una opcio que soles pot tindre els usuaris admins:**
 
-![Imagen subida](imgread/subidafotos.png)
+    ![Pàgina LogUsuAdmin](imgread/menuadmin.png)
+    
+### Formulari de introducció de productes.
 
-![Pàgina Logout](imgread/cerrarsession.png)
+* **Formulari que permet apart de introduir el nom del producte, la descripció, el preu(opcional), permet introduir imatges i que es guarden al servidor, i també segon el que siga si es un producte o un decorat, podem seleccionar la categoria del que introduïm.**
 
-![Pàgina SessionAnonimo](imgread/pruebacerrarsession.png)
+    ![Pàgina FormIntrProd](imgread/formintrodprod.png)
+
+    ![Pàgina FormIntrProdLleno](imgread/formintrodprodlleno.png)
+
+* **Una vegada tots els camps requerits estan plens i pressionem en "Introducir Producto" se enviaran les dades a una pagina de recollida de dades**
+
+    ![Pàgina RecogidaFormIntrProd](imgread/recformintrodprod.png)
+
+* **Comprovació de que es pugen les imatges al servidor**
+
+    ![Imagen subida](imgread/subidafotos.png)
+
+### Tancament de sessions
+
+* **Esta opció apareixerà per a tots els usuaris que estiguen logetgats**
+
+    ![Pàgina Logout](imgread/cerrarsession.png)
+
+* **Una vegada tanquem la sessió ens redirigix a la pagina de inici com a usuari Anonim**
+
+    ![Pàgina SessionAnonimo](imgread/pruebacerrarsession.png)
 
 
 
