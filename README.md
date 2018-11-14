@@ -6,7 +6,7 @@
 
 * **Títol del projecte**: SpecialSanchezTruck
 * **Objectius**: 
-  *Desenvolupar una aplicació amb una tenda online de productes i accessoris per a decorar camions i també d'exemples de decorats de camions i una descripció.
+  Desenvolupar una aplicació amb una tenda online de productes i accessoris per a decorar camions i també d'exemples de decorats de camions i una descripció.
 * **Descripció**: El projecte que plantege, SpecialSanchezTruck és una tenda online orientada a la venta de productes i accessoris per a camions. També hi haurà una part de notícies amb decorats de exemple.
 * **Desenvolupador**: @sanchezasix
 * **Adreça web en Github:** https://github.com/2ASIX2018/SpecialSanchezTruck
