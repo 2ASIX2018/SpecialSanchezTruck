@@ -43,6 +43,28 @@ Les diferents pàgines què tindra la pagina web.
 
 ![Pàgina Login](imgread/login.PNG)
 
+## SpecialSanchezTruck  Sprint 2:
+
+* **Control de sessions**
+    * **Pagines que s'adapten segons el usuari**
+
+* **Formulari de registre:**
+    * **Comprobacions de dades de introduccio**
+    * **Pagina que rep les dades del formulari de registre**
+
+* **Formulari de login**
+    * **Comprobacions de usuaris**
+
+* **Formulari de introduccio de productes**
+    * **Comprobacions de dades de introduccio**
+    * **Pagina que rep les dades del formulari de introduccio de productes**
+
+* **Tancament de session**
+
+
+
+
+
 ### 3. Tasques a realitzar i calendari previst
 
 | Tasca | Dates de realització |
