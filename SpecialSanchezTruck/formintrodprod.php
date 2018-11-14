@@ -21,11 +21,9 @@
     </div>
     <div>
       <br><select name="categoria">
-        <option value="categoria1">Categoria1</option>
-        <option value="categoria2">Categoria2</option>
-        <option value="categoria3">Categoria3</option>
-        <option value="categoria4">Categoria4</option>
-      </select>
+        <option value="categoria1">Producto</option>
+        <option value="categoria2">Decorado</option>
+         </select>
   </div>
   <div>
     <br><button type="submit" class="btn btn-primary">Introducir Producto</button>
