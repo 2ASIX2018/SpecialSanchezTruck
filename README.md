@@ -67,16 +67,29 @@ Les diferents pàgines què tindra la pagina web.
 
     ![Pàgina Anonimo](imgread/paganonimo.png)
 
+### Pagina de inici login (formulari de login).
 
-![Pàgina EntrarFormReg](imgread/entrarformreg.png)
+* **Per a usuaris no registrats esta disponible la opcio "No estas registrado?" per accedir al formulari de registre**
 
-![Pàgina FormReg](imgread/formreg.png)
+    ![Pàgina EntrarFormReg](imgread/entrarformreg.png)
+    
+### Pagina de Formulari de registre.
 
-![Pàgina FormRegLLeno](imgread/formreglleno.png)
+* **Te camps requerits que si no els plenem no ens deixar enviar les dades de registre**
 
-![Pàgina RecogidaFormReg](imgread/recformreg.png)
+    ![Pàgina FormReg](imgread/formreg.png)
 
-![Pàgina UsuarioError](imgread/usuarioerror.png)
+    ![Pàgina FormRegLLeno](imgread/formreglleno.png)
+
+* **Una vegada tots els camps requerits estan plens i prisionem en "Registrarse" se enviaran les dades a una pagina de recollida de dades**
+
+    ![Pàgina RecogidaFormReg](imgread/recformreg.png)
+    
+### Control de usuaris registrats.
+
+* **Si introduim un usuari que no esta registrat ens apareixera el següent error**
+
+    ![Pàgina UsuarioError](imgread/usuarioerror.png)
 
 ![Pàgina ErrorUsuario](imgread/errorusuario.png)
 
