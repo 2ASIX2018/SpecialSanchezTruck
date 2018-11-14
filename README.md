@@ -61,11 +61,44 @@ Les diferents pàgines què tindra la pagina web.
 
 * **Tancament de session**
 
+![Pàgina Anonimo](imgread/paganonimo.png)
+
+![Pàgina EntrarFormReg](imgread/entrarformreg.png)
+
+![Pàgina FormReg](imgread/formreg.png)
+
+![Pàgina FormRegLLeno](imgread/formreglleno.png)
+
+![Pàgina RecogidaFormReg](imgread/recformreg.png)
+
+![Pàgina UsuarioError](imgread/usuarioerror.png)
+
+![Pàgina ErrorUsuario](imgread/errorusuario.png)
+
+![Pàgina UsuarioPrueba](imgread/usuarioprueba.png)
+
+![Pàgina LogUsuPrueba](imgread/loginusuarioprueba.png)
+
+![Pàgina UsuarioAdmin](imgread/usuarioadmin.png)
+
+![Pàgina LogUsuAdmin](imgread/menuadmin.png)
+
+![Pàgina FormIntrProd](imgread/formintrodprod.png)
+
+![Pàgina FormIntrProdLleno](imgread/formintrodprodlleno.png)
+
+![Pàgina RecogidaFormIntrProd](imgread/recformintrodprod.png)
+
+![Imagen subida](imgread/subidafotos.png)
+
+![Pàgina Logout](imgread/cerrarsession.png)
+
+![Pàgina SessionAnonimo](imgread/pruebacerrarsession.png)
 
 
 
 
-### 3. Tasques a realitzar i calendari previst
+### Tasques a realitzar i calendari previst
 
 | Tasca | Dates de realització |
 |------|-------------|
