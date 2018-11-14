@@ -11,6 +11,8 @@
 * **Desenvolupador**: @sanchezasix
 * **Adreça web en Github:** https://github.com/2ASIX2018/SpecialSanchezTruck
 
+## SpecialSanchezTruck  Sprint 1: 
+
 ### 2. Disseny
 
 L'aplicació farà ús de dos taules per a gestionar els accessoris i productes, altres dos per a gestionar els exemples de decorats, i altra taula per a gestionar els usuaris.
