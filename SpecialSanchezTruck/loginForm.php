@@ -32,7 +32,7 @@
                     <span id="reauth-email" class="reauth-email"></span>
                     <input type="text" name="inputUser" class="form-control" placeholder="Usuario" required autofocus>
                     <input type="password" name="inputPassword" class="form-control" placeholder="Contraseña" required>
-                    <div id="remember" class="checkbox">
+                    <div class="checkbox">
                         <label>
                             <input type="checkbox" value="recuerdame" name="recuerdame"> Recuerdarme
                         </label>

@@ -2,21 +2,23 @@
 
 session_start();
 
-$usuaris=["admin", "prueba"];
-
-$user=$_REQUEST["inputUser"];
-$passw=$_REQUEST["inputPassword"];
-$recordar=$_REQUEST["recuerdame"];
-
-if ($passw=="1234" && in_array($user, $usuaris)){
-
-    $_SESSION['username'] = $user;
     
-    if ($user=="admin"){
-        $_SESSION['role'] = "admin";
-    } else if ($user=="prueba"){
-        $_SESSION["role"] = "user";
-    }
+    require_once("models/usuari.php");
+    
+    $usuari=new Usuari();
+    
+
+    $user=$_REQUEST["inputUser"];
+    $pass=$_REQUEST["inputPassword"];
+    $recordar=$_REQUEST["recuerdame"];
+    
+    $role=$usuari->validaUsuari($user, $pass);
+    
+    if ($role){
+    
+    $_SESSION['username']=$user;
+    $_SESSION['role'] = $role;
+
 
     if ($recordar=="recuerdame"){
 
