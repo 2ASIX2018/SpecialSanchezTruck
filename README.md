@@ -6,10 +6,12 @@
 
 * **Títol del projecte**: SpecialSanchezTruck
 * **Objectius**: 
-  *Desenvolupar una aplicació amb una tenda online de productes i accessoris per a decorar camions i també d'exemples de decorats de camions i una descripció.
+  Desenvolupar una aplicació amb una tenda online de productes i accessoris per a decorar camions i també d'exemples de decorats de camions i una descripció.
 * **Descripció**: El projecte que plantege, SpecialSanchezTruck és una tenda online orientada a la venta de productes i accessoris per a camions. També hi haurà una part de notícies amb decorats de exemple.
 * **Desenvolupador**: @sanchezasix
 * **Adreça web en Github:** https://github.com/2ASIX2018/SpecialSanchezTruck
+
+## SpecialSanchezTruck  Sprint 1: 
 
 ### 2. Disseny
 
@@ -41,7 +43,104 @@ Les diferents pàgines què tindra la pagina web.
 
 ![Pàgina Login](imgread/login.PNG)
 
-### 3. Tasques a realitzar i calendari previst
+## SpecialSanchezTruck  Sprint 2:
+
+* **Control de sessions**
+    * **Pagines que s'adapten segons el usuari**
+
+* **Formulari de registre:**
+    * **Comprovacions de dades de introducció**
+    * **Pagina que rep les dades del formulari de registre**
+
+* **Formulari de login**
+    * **Comprovacions de usuaris**
+
+* **Formulari de introducció de productes**
+    * **Comprovacions de dades de introducció**
+    * **Pagina que rep les dades del formulari de introducció de productes**
+
+* **Tancament de sessions**
+
+### Pagina de inici per a usuaris no registrats.
+
+* **Tindran l'opció de accedir per poder entrar a la pagina de login**
+
+    ![Pàgina Anonimo](imgread/paganonimo.png)
+
+### Pagina de inici login (formulari de login).
+
+* **Per a usuaris no registrats esta disponible la opció "No estas registrado?" per accedir al formulari de registre**
+
+    ![Pàgina EntrarFormReg](imgread/entrarformreg.png)
+    
+### Pagina de Formulari de registre.
+
+* **Te camps requerits que si no els plenem no ens deixar enviar les dades de registre**
+
+    ![Pàgina FormReg](imgread/formreg.png)
+
+    ![Pàgina FormRegLLeno](imgread/formreglleno.png)
+
+* **Una vegada tots els camps requerits estan plens i pressionem en "Registrarse" se enviaran les dades a una pagina de recollida de dades**
+
+    ![Pàgina RecogidaFormReg](imgread/recformreg.png)
+    
+### Control de usuaris registrats.
+
+* **Si introduïm un usuari que no esta registrat:**
+
+    ![Pàgina UsuarioError](imgread/usuarioerror.png)
+
+  **Ens apareixerà el següent error amb la opció de pressionar en "Volver a intentar" redireccionara a la pagina de login**
+
+    ![Pàgina ErrorUsuario](imgread/errorusuario.png)
+
+* **Si introduïm un usuari que esta registrat:**
+
+    ![Pàgina UsuarioPrueba](imgread/usuarioprueba.png)
+
+* **Si el usuari es de rol user o lo que es el mateix un usuari registrat normal apareixeran aquestes opcions:**
+
+    ![Pàgina LogUsuPrueba](imgread/loginusuarioprueba.png)
+
+* **Usuari Admin o usuari amb rol admin:**
+
+    ![Pàgina UsuarioAdmin](imgread/usuarioadmin.png)
+
+  **Si el usuari es de rol admin apareixera la opció "Introducir Productos" que es una opcio que soles pot tindre els usuaris admins:**
+
+    ![Pàgina LogUsuAdmin](imgread/menuadmin.png)
+    
+### Formulari de introducció de productes.
+
+* **Formulari que permet apart de introduir el nom del producte, la descripció, el preu(opcional), permet introduir imatges i que es guarden al servidor, i també segon el que siga si es un producte o un decorat, podem seleccionar la categoria del que introduïm.**
+
+    ![Pàgina FormIntrProd](imgread/formintrodprod.png)
+
+    ![Pàgina FormIntrProdLleno](imgread/formintrodprodlleno.png)
+
+* **Una vegada tots els camps requerits estan plens i pressionem en "Introducir Producto" se enviaran les dades a una pagina de recollida de dades**
+
+    ![Pàgina RecogidaFormIntrProd](imgread/recformintrodprod.png)
+
+* **Comprovació de que es pugen les imatges al servidor**
+
+    ![Imagen subida](imgread/subidafotos.png)
+
+### Tancament de sessions
+
+* **Esta opció apareixerà per a tots els usuaris que estiguen logetgats**
+
+    ![Pàgina Logout](imgread/cerrarsession.png)
+
+* **Una vegada tanquem la sessió ens redirigix a la pagina de inici com a usuari Anonim**
+
+    ![Pàgina SessionAnonimo](imgread/pruebacerrarsession.png)
+
+
+
+
+### Tasques a realitzar i calendari previst
 
 | Tasca | Dates de realització |
 |------|-------------|
