@@ -16,6 +16,8 @@
     <!-- Custom styles for this template -->
     <link href="css/3-col-portfolio.css" rel="stylesheet">
 
+    <link href="css/submenu.css" rel="stylesheet">
+
   </head>
 
   <body>

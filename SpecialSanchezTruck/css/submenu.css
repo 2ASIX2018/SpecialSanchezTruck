@@ -1,0 +1,48 @@
+
+.boton {
+    background-color: #343a40;
+    padding: .5rem 1rem;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color:rgba(255,255,255,.5);
+}
+
+.submenu {
+    position: absolute;
+    background: black;
+    min-width: 160px;
+    margin-top: 7px;
+    display: none;
+    z-index: 1;
+    
+}
+
+ 
+.submenu li a {
+    float: none;
+    display: block;
+    padding: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: left;
+    
+}
+
+.nav-item:hover .submenu{
+    display: block;
+}
+
+/*.submenu > li {
+
+    float: left;
+}
+.submenu li ul {
+    display: none;
+    position: relative;
+}
+
+/*.submenu {
+     display: block;
+}*/

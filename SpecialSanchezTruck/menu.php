@@ -55,9 +55,19 @@
             <!--?php } ?-->
             
             <?php if($role=="(admin)"){ ?> 
-            <li class="nav-item">
-                <a class="nav-link" href="introdprod.php">Introducir Productos</a>
+              <div class="dropdown" style="float">
+              <li class="nav-item">
+                <button class="boton">Introducir Productos</button>
+                <ul class="submenu">
+                  <li >
+                    <a class="nav-link" href="introddec.php">Introducir Decorado</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="introdprod.php">Introducir Productos</a>
+                  </li>
+                <ul>
               </li>
+            </div>
             <?php } ?>
 
             <?php if($user=="Anonimo"){ ?>

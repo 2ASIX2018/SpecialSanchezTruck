@@ -25,16 +25,22 @@
       <input type="password" class="form-control" name="password2" placeholder="Password" required>
     </div>
   </div>
+  
   <div class="form-group">
-    <label for="inputAddress">Direccion</label>
-    <input type="text" class="form-control" name="direccion" placeholder="Direccion">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Direccion 2</label>
-    <input type="text" class="form-control" name="direccion2" placeholder="Direccion2">
-  </div>
+     <label for="inputAddress">Direccion</label>
+     <input type="text" class="form-control" name="direccion" placeholder="Direccion">
+   </div>
+  
   <div class="form-row">
     <div class="form-group col-md-6">
+      <label for="inputAddress2">DNI</label>
+      <input type="text" class="form-control" name="dni" placeholder="DNI" maxlength="9" require>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputAddress2">Telefono</label>
+      <input type="text" class="form-control" name="telefono" placeholder="telefono">
+    </div>
+     <div class="form-group col-md-6">
       <label for="inputCity">Ciudad</label>
       <input type="text" class="form-control" name="ciutat" required>
     </div>

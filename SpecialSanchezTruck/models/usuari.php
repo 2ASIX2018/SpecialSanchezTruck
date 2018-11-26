@@ -6,8 +6,8 @@
                 
                 require_once("conexio.php");
                 
-                #$cadenaConnexio="mysql:host=".$connexio["servidor"].";dbname=".$connexio['bd'];
-                $cadenaConnexio="mysql:host=127.0.0.1;dbname=sst";
+                $cadenaConnexio="mysql:host=".$connexio["servidor"].";dbname=".$connexio['bd'];
+                #$cadenaConnexio="mysql:host=127.0.0.1;dbname=sst";
                 echo $cadenaConnexio;
                 $db = new PDO($cadenaConnexio, 'root', '');
 

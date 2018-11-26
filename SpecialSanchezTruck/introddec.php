@@ -36,7 +36,7 @@
     
     <div class="container">
       <div class="containerreg">
-        <?php require_once("formintrodprod.php"); ?>
+        <?php require_once("formintroddec.php"); ?>
       </div>
     </div>
 
