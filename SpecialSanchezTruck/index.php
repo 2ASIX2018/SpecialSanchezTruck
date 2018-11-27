@@ -18,6 +18,15 @@
 
     <link href="css/submenu.css" rel="stylesheet">
 
+    <!--?php
+    require_once("models/productos.php");
+    $gestorArticulos=new Articulo();
+    $num_articulos=$gestorArticulos->NumArticulos();
+    #echo ($articulos);
+    #$pagina_actual=0; // Per defecte mostrarem la pàgina 1 de resultats
+    // Comprovem si ens demanen una pàgina de resultats concreta
+    ?-->
+
   </head>
 
   <body>
@@ -34,7 +43,7 @@
         <small>Productos</small>
       </h1>
 
-      <div class="row">
+      <!--div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <a href="#"><img class="card-img-top" src="imagenes/pagprincipal/defensa.jpg" alt=""></a>
@@ -69,7 +78,41 @@
               <p class="card-text">El diametro compatible es de 32mm</p>
             </div>
           </div>
+        </div->
+
+      </div-->
+      <div class="row">
+      <?php
+
+        require_once("models/productos.php");
+        $gestorArticulos=new Articulo();
+        
+        $articulos=$gestorArticulos->listaArticulos();
+
+        if (count($articulos)>0){
+        for($i=0; $i<count($articulos); $i++)
+        {
+          if ($articulos[$i]["idcat"]==1)
+          {
+          ?>
+
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a><img class="card-img-top" src="data:image/jpg;base64,<?php echo base64_encode($articulos[$i]["imagen"]); ?>"><a>
+          <!--a href="#"><img class="card-img-top" src="imagenes/pagprincipal/scania_weeda.jpg" alt=""></a-->
+            <div class="card-body">
+              <h4 class="card-title"> <?php echo( $articulos[$i]["nombre"]); ?></h4>
+              <p class="card-text"><?php echo ($articulos[$i]["descripcion"]); ?></p>
+            </div>
+          </div>
         </div>
+
+        <?php 
+          } 
+        }
+        }  
+        ?>
+
 
       </div>
 
@@ -80,7 +123,7 @@
       </h1>
 
 
-      <div class="row">
+      <!--div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <a href="#"><img class="card-img-top" src="imagenes/pagprincipal/scania_weeda.jpg" alt=""></a>
@@ -126,8 +169,38 @@
             </div>
           </div>
         </div>
-      </div>
+      </div-->
+
+        <div class="row">
+      <?php
+
+        for($i=0; $i<count($articulos); $i++)
+        {
+          if ($articulos[$i]["idcat"]==2)
+          {
+          ?>
+
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a><img class="card-img-top" src="data:image/jpg;base64,<?php echo base64_encode($articulos[$i]["imagen"]); ?>"><a>
+          <!--a href="#"><img class="card-img-top" src="imagenes/pagprincipal/scania_weeda.jpg" alt=""></a-->
+            <div class="card-body">
+              <h4 class="card-title"> <?php echo( $articulos[$i]["nombre"]); ?></h4>
+              <p class="card-text"><?php echo ($articulos[$i]["descripcion"]); ?></p>
+            </div>
+          </div>
         </div>
+
+        <?php 
+          } 
+        }
+          
+        ?>
+
+
+      </div>
+
+      </div>
       <!-- /.row -->
 
       <!-- Pagination>
