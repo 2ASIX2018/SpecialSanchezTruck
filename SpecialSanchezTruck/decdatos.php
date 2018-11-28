@@ -1,13 +1,19 @@
+<!--html>
+
+<body>
+
+<h1>Datos del Formulario de Registro de Productos.</h1-->
+
 <?php
 
 require("models/productos.php");
-#$target_dir = "imagsubidas/";
-#$target_file = $target_dir . basename($_FILES["imagensub"]["name"]);
+/*$target_dir = "imagenes/decorados/";
+$target_file = $target_dir . basename($_FILES["imagensub"]["name"]);*/
 
 $nombre=$_REQUEST["nombreproducto"];
 $desc=$_REQUEST["descripcion"];
-$precio=$_REQUEST["precio"];
-$cat=1;
+$precio=0;
+$cat=2;
 
 /*echo ("<p>Nombre Producto ".$_REQUEST["nombreproducto"]."</p>");
 echo ("<p>Descripcion: ".$_REQUEST["descripcion"]."</p>");
@@ -32,3 +38,7 @@ if (move_uploaded_file($tmp_file, $target_file)) {
 }*/
 
 ?>
+
+
+<!--/body>
+</html-->

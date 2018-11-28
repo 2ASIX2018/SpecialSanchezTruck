@@ -86,10 +86,19 @@
 
         require_once("models/productos.php");
         $gestorArticulos=new Articulo();
-        
-        $articulos=$gestorArticulos->listaArticulos();
+        #$articulos=$gestorArticulos->listaArticulos();
+        $articulos=$gestorArticulos->RangoArtProd();
 
-        if (count($articulos)>0){
+        #$num_articulos=$gestorArticulos->NumArticulos();
+        //$pagina_actual=0; // Per defecte mostrarem la pàgina 1 de resultats
+        // Comprovem si ens demanen una pàgina de resultats concreta
+        #if(isset($_REQUEST["pg"])) $pagina_actual=$_REQUEST["pg"];
+        #$articulos_por_pagina=6;
+
+        #$articulos=$gestorNoticies->RangoArt($articulos_por_pagina);
+
+        #if (count($articulos)>0){
+        #for($i=0; $i<count($articulos); $i++)
         for($i=0; $i<count($articulos); $i++)
         {
           if ($articulos[$i]["idcat"]==1)
@@ -103,6 +112,7 @@
             <div class="card-body">
               <h4 class="card-title"> <?php echo( $articulos[$i]["nombre"]); ?></h4>
               <p class="card-text"><?php echo ($articulos[$i]["descripcion"]); ?></p>
+              <h4 class="card-title"> <?php echo( $articulos[$i]["precio"]);?>€</h4>
             </div>
           </div>
         </div>
@@ -110,7 +120,7 @@
         <?php 
           } 
         }
-        }  
+        #}  
         ?>
 
 
@@ -173,6 +183,11 @@
 
         <div class="row">
       <?php
+
+        require_once("models/productos.php");
+        $gestorArticulos=new Articulo();
+        #$articulos=$gestorArticulos->listaArticulos();
+        $articulos=$gestorArticulos->RangoArtDec();
 
         for($i=0; $i<count($articulos); $i++)
         {

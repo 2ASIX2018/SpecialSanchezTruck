@@ -31,7 +31,7 @@
                 <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
                 <p id="profile-name" class="profile-name-card"></p>
                 <form action="login.php" class="form-signin" method="post">
-                    <span id="reauth-email" class="reauth-email"></span>
+                    <span class="reauth-email"></span>
                     <input type="text" name="inputUser" class="form-control" placeholder="Usuario" required autofocus>
                     <input type="password" name="inputPassword" class="form-control" placeholder="Contraseña" required>
                     <div class="checkbox">

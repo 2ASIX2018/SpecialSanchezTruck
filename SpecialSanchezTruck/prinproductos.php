@@ -32,7 +32,41 @@
           Productos
       </h1>
 
-    <div class="row">
+      <div class="row">
+
+      <?php
+
+        require_once("models/productos.php");
+        $gestorArticulos=new Articulo();
+        $articulos=$gestorArticulos->listaArticulos();
+
+        for($i=0; $i<count($articulos); $i++)
+        {
+          if ($articulos[$i]["idcat"]==1)
+          {
+          ?>
+
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a><img class="card-img-top" src="data:image/jpg;base64,<?php echo base64_encode($articulos[$i]["imagen"]); ?>"><a>
+
+            <div class="card-body">
+              <h4 class="card-title"> <?php echo( $articulos[$i]["nombre"]); ?></h4>
+              <p class="card-text"><?php echo ($articulos[$i]["descripcion"]); ?></p>
+              <h4 class="card-title"> <?php echo( $articulos[$i]["precio"]); ?>€</h4>
+            </div>
+          </div>
+        </div>
+
+        <?php 
+          } 
+        }
+        #}  
+        ?>
+
+      </div>
+
+    <!--div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <a href="#"><img class="card-img-top" src="imagenes/pagprincipal/defensa.jpg" alt=""></a>
@@ -68,7 +102,7 @@
             </div>
           </div>
       </div>
-  </div>
+    </div-->
 </div>
 
     <!-- Footer -->
