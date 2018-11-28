@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.24, for Linux (x86_64)
 --
--- Host: localhost    Database: sst_2
+-- Host: localhost    Database: sst
 -- ------------------------------------------------------
 -- Server version	5.7.24-0ubuntu0.18.04.1
 
@@ -18,8 +18,8 @@
 --
 -- Table structure for table `Categoria_Productos`
 --
-create database sst_2;
-use sst_2;
+create database sst;
+use sst;
 
 DROP TABLE IF EXISTS `Categoria_Productos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -113,7 +113,7 @@ CREATE TABLE `Usuarios` (
 LOCK TABLES `Usuarios` WRITE;
 /*!40000 ALTER TABLE `Usuarios` DISABLE KEYS */;
 INSERT INTO `Usuarios` VALUES 
-(1,'admin','admininstrador',NULL,'admin@admin','1234','sst_2','0',0,'Sueca',NULL,NULL,NULL,'admin'),
+(1,'admin','admininstrador',NULL,'admin@admin','1234','sst','0',0,'Sueca',NULL,NULL,NULL,'admin'),
 (2,'user','usuario',NULL,'user@user','1234','c/','0',0,'Sueca',NULL,NULL,NULL,'user');
 /*!40000 ALTER TABLE `Usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
