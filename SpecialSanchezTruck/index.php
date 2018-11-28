@@ -107,7 +107,7 @@
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a><img class="card-img-top" src="data:image/jpg;base64,<?php echo base64_encode($articulos[$i]["imagen"]); ?>"><a>
+            <a><img class="card-img-top" src="<?php echo( $articulos[$i]["nimagen"]);?>"><a>
           <!--a href="#"><img class="card-img-top" src="imagenes/pagprincipal/scania_weeda.jpg" alt=""></a-->
             <div class="card-body">
               <h4 class="card-title"> <?php echo( $articulos[$i]["nombre"]); ?></h4>
@@ -197,7 +197,7 @@
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a><img class="card-img-top" src="data:image/jpg;base64,<?php echo base64_encode($articulos[$i]["imagen"]); ?>"><a>
+            <a><img class="card-img-top" src="<?php echo( $articulos[$i]["nimagen"]);?>"><a>
           <!--a href="#"><img class="card-img-top" src="imagenes/pagprincipal/scania_weeda.jpg" alt=""></a-->
             <div class="card-body">
               <h4 class="card-title"> <?php echo( $articulos[$i]["nombre"]); ?></h4>

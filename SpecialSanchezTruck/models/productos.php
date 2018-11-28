@@ -28,7 +28,7 @@ class Articulo{
         }
     }
 
-    public function listaarticulos(){
+    public function listaProd(){
         try{
             require("conexio.php");
             
@@ -38,18 +38,57 @@ class Articulo{
             $dbCon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);    
             
             // Preparem la consulta
-            $consulta = $dbCon->prepare('SELECT idarticulo, Nombre, Descripcion, Precio, Imagen, idCat_Prod FROM Productos ORDER BY idarticulo DESC');
+            $consulta = $dbCon->prepare('SELECT idarticulo, Nombre, Descripcion, Precio, nimagen, idCat_Prod FROM Productos ORDER BY idarticulo DESC');
             
             // Executem la consulta
             $consulta->execute();
             $articulos=array();
+            $ruta='imagenes/productos/';
             // Agafem els resultats amb un bucle i els afegim a l'array de noticies
             while($fila=$consulta->fetch()){
                 $articulo["id"]=$fila[0];
                 $articulo["nombre"]=$fila[1];
                 $articulo["descripcion"]=$fila[2];
                 $articulo["precio"]=$fila[3];
-                $articulo["imagen"]=$fila[4];
+                $articulo["nimagen"]=$ruta.$fila[4];
+                $articulo["idcat"]=$fila[5];
+                array_push($articulos, $articulo);
+            }
+            
+            // Tanquem la connexió
+            $dbCon=null;
+            // tornem els resultats
+            return $articulos;
+            
+        } catch (PDOException $e){
+            echo("Error:".$e->getMessage());
+            $dbCon=null;
+        }
+    }
+
+    public function listaDec(){
+        try{
+            require("conexio.php");
+            
+            // Fem la connexió
+            $cadenaConnexio="mysql:host=".$connexio["servidor"].";dbname=".$connexio['bd'];
+            $dbCon = new PDO($cadenaConnexio, $connexio["usuari"], $connexio["contrassenya"]); 
+            $dbCon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);    
+            
+            // Preparem la consulta
+            $consulta = $dbCon->prepare('SELECT idarticulo, Nombre, Descripcion, Precio, nimagen, idCat_Prod FROM Productos ORDER BY idarticulo DESC');
+            
+            // Executem la consulta
+            $consulta->execute();
+            $articulos=array();
+            $ruta='imagenes/decorados/';
+            // Agafem els resultats amb un bucle i els afegim a l'array de noticies
+            while($fila=$consulta->fetch()){
+                $articulo["id"]=$fila[0];
+                $articulo["nombre"]=$fila[1];
+                $articulo["descripcion"]=$fila[2];
+                $articulo["precio"]=$fila[3];
+                $articulo["nimagen"]=$ruta.$fila[4];
                 $articulo["idcat"]=$fila[5];
                 array_push($articulos, $articulo);
             }
@@ -78,20 +117,22 @@ class Articulo{
             #echo '2';
             // Preparem la consulta
             #$consulta = $dbCon->prepare('SELECT idarticulo, Nombre, Descripcion, Precio, Imagen, idCat_Prod FROM Productos ORDER BY idarticulo DESC LIMIT :offset, :limit');
-            $consulta = $dbCon->prepare('SELECT idarticulo, Nombre, Descripcion, Precio, Imagen, idCat_Prod FROM Productos where idCat_Prod=1 ORDER BY idarticulo DESC LIMIT 3');
+            $consulta = $dbCon->prepare('SELECT idarticulo, Nombre, Descripcion, Precio, nimagen, idCat_Prod FROM Productos where idCat_Prod=1 ORDER BY idarticulo DESC LIMIT 3');
             // Executem la consulta
             #$consulta->bindValue(':offset', intval($ini),PDO::PARAM_INT);
             #$consulta->bindValue(':limit', intval($fin),PDO::PARAM_INT);
             #echo '3';
             $consulta->execute();
             $articulos=array();
+            $ruta='imagenes/productos/';
             // Agafem els resultats amb un bucle i els afegim a l'array de noticies
             while($fila=$consulta->fetch()){
                 $articulo["id"]=$fila[0];
                 $articulo["nombre"]=$fila[1];
                 $articulo["descripcion"]=$fila[2];
                 $articulo["precio"]=$fila[3];
-                $articulo["imagen"]=$fila[4];
+                #$articulo["imagen"]=$fila[4];
+                $articulo["nimagen"]=$ruta.$fila[4];
                 $articulo["idcat"]=$fila[5];
                 array_push($articulos, $articulo);
             }
@@ -120,20 +161,21 @@ class Articulo{
             #echo '2';
             // Preparem la consulta
             #$consulta = $dbCon->prepare('SELECT idarticulo, Nombre, Descripcion, Precio, Imagen, idCat_Prod FROM Productos ORDER BY idarticulo DESC LIMIT :offset, :limit');
-            $consulta = $dbCon->prepare('SELECT idarticulo, Nombre, Descripcion, Precio, Imagen, idCat_Prod FROM Productos where idCat_Prod=2 ORDER BY idarticulo DESC LIMIT 3');
+            $consulta = $dbCon->prepare('SELECT idarticulo, Nombre, Descripcion, Precio, nimagen, idCat_Prod FROM Productos where idCat_Prod=2 ORDER BY idarticulo DESC LIMIT 3');
             // Executem la consulta
             #$consulta->bindValue(':offset', intval($ini),PDO::PARAM_INT);
             #$consulta->bindValue(':limit', intval($fin),PDO::PARAM_INT);
             #echo '3';
             $consulta->execute();
             $articulos=array();
+            $ruta='imagenes/decorados/';
             // Agafem els resultats amb un bucle i els afegim a l'array de noticies
             while($fila=$consulta->fetch()){
                 $articulo["id"]=$fila[0];
                 $articulo["nombre"]=$fila[1];
                 $articulo["descripcion"]=$fila[2];
                 $articulo["precio"]=$fila[3];
-                $articulo["imagen"]=$fila[4];
+                $articulo["nimagen"]=$ruta.$fila[4];
                 $articulo["idcat"]=$fila[5];
                 array_push($articulos, $articulo);
             }
@@ -150,7 +192,7 @@ class Articulo{
     }
 
 
-    public function aarticulo($nombre, $desc, $precio, $cat){
+    public function aarticulo($nombre, $desc, $precio, $cat, $img){
         try{
             require_once("conexio.php");
             
@@ -164,8 +206,9 @@ class Articulo{
             (`Nombre`,
             `Descripcion`,
             `Precio`,
-            `idCat_Prod`)
-                VALUES (?, ?, ?, ?);');
+            `idCat_Prod`,
+            `nimagen`)
+                VALUES (?, ?, ?, ?, ?);');
             #mysql_query($consulta);
             #echo '5555555';
 
@@ -174,8 +217,9 @@ class Articulo{
             echo("<br/>Precio".$precio);
             #echo("<br/>Imagen:".$imagen);
             echo("<br/>idCat_Prod".$cat);
+            echo("<br/>nimagen".$img);
             
-            $consulta->execute(array($nombre, $desc, $precio, $cat));
+            $consulta->execute(array($nombre, $desc, $precio, $cat, $img));
             echo '6666666';
             #echo $consulta;
             print_r($dbCon->errorInfo());

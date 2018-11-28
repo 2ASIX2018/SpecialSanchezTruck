@@ -38,7 +38,7 @@
 
           require_once("models/productos.php");
           $gestorArticulos=new Articulo();
-          $articulos=$gestorArticulos->listaArticulos();
+          $articulos=$gestorArticulos->listaDec();
 
           for($i=0; $i<count($articulos); $i++)
           {
@@ -48,7 +48,7 @@
 
           <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-              <a><img class="card-img-top" src="data:image/jpg;base64,<?php echo base64_encode($articulos[$i]["imagen"]); ?>"><a>
+              <a><img class="card-img-top" src="<?php echo( $articulos[$i]["nimagen"]);?>"><a>
         
               <div class="card-body">
                 <h4 class="card-title"> <?php echo( $articulos[$i]["nombre"]); ?></h4>
