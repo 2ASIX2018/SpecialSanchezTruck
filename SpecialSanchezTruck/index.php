@@ -95,7 +95,7 @@
         #if(isset($_REQUEST["pg"])) $pagina_actual=$_REQUEST["pg"];
         #$articulos_por_pagina=6;
 
-        #$articulos=$gestorNoticies->RangoArt($articulos_por_pagina);
+        
 
         #if (count($articulos)>0){
         #for($i=0; $i<count($articulos); $i++)
