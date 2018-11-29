@@ -15,7 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/3-col-portfolio.css" rel="stylesheet">
-
+    <link href="css/estrellas.css" rel="stylesheet">
     <link href="css/submenu.css" rel="stylesheet">
 
     <!--?php
@@ -220,7 +220,7 @@
           <?php
           }
           ?>
-          
+
             <div class="card-body">
               <h4 class="card-title"> <?php echo( $articulos[$i]["nombre"]); ?></h4>
               <p class="card-text"><?php echo ($articulos[$i]["descripcion"]); ?></p>
