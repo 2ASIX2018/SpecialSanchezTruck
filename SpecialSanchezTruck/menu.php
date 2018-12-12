@@ -57,13 +57,16 @@
             <?php if($role=="(admin)"){ ?> 
               <div class="dropdown" style="float">
               <li class="nav-item">
-                <button class="boton">Introducir Productos</button>
+                <button class="boton">Administrar</button>
                 <ul class="submenu">
                   <li >
                     <a class="nav-link" href="introddec.php">Introducir Decorado</a>
                   </li>
                   <li>
                     <a class="nav-link" href="introdprod.php">Introducir Productos</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="admusuarios.php">Administrar Usuarios</a>
                   </li>
                 <ul>
               </li>

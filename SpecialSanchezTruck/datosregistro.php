@@ -20,7 +20,7 @@ $rol="user";
 $articulo=new Usuari();
 $articulo->altaUsuari($unam, $nom, $apll, $email, $passw, $direc, $dni, $tlf, $cit, $cod, $pais, $prov, $rol);
 
-header("Location: index.php");
+#header("Location: index.php");
 
 
 ?>

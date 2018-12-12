@@ -41,6 +41,27 @@
                 #echo '555555555';
                 echo $cadenaConnexio;
 
+                $compusu = $dbCon->prepare('SELECT * FROM Usuarios WHERE username = ? LIMIT 1');
+                $compusu->execute(array($unam));
+                $resusuario=$compusu->fetch();
+
+                $compemail = $dbCon->prepare('SELECT * FROM Usuarios WHERE email = ? LIMIT 1');
+                $compemail->execute(array($email));
+                $resemail=$compemail->fetch();
+
+                if ($resusuario){
+                    $alerta="El usuario esta en uso en esta pagina";
+                    //return $alerta;
+
+                    header("Location: altausufallo.php?alerta=$alerta"); 
+
+                } else if ($resemail){
+                    $alerta="El email esta en uso en esta pagina";
+                    //return $alerta;
+
+                    header("Location: altausufallo.php?alerta=$alerta");
+
+                } else {
                 $consulta = $dbCon->prepare('INSERT INTO `Usuarios`
                 (`username`,
                 `nombre`,
@@ -72,7 +93,6 @@
                 echo("<br/>CP:".$cod);
                 echo("<br/>Prov:".$prov);
                 echo("<br/>Rol:".$rol);
-                
 
                 
                 $consulta->execute(array($unam, $nom, $apll, $email, $passw, $direc, $dni, $tlf, $cit, $cod, $pais, $prov, $rol));
@@ -80,6 +100,9 @@
                 #echo $consulta;
                 print_r($dbCon->errorInfo());
                 echo("Files afectades: ".$consulta->rowCount());
+                header("Location: altausucorrecto.php");
+                
+                }
                             
                 $dbCon=null;
                 
