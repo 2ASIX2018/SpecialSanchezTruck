@@ -66,7 +66,7 @@
                     <a class="nav-link" href="introdprod.php">Introducir Productos</a>
                   </li>
                   <li>
-                    <a class="nav-link" href="admusuarios.php">Administrar Usuarios</a>
+                    <a class="nav-link" href="pagadmusuarios.php">Administrar Usuarios</a>
                   </li>
                 <ul>
               </li>

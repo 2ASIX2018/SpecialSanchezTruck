@@ -110,6 +110,38 @@
                 echo("Error:".$e->getMessage());
                 $dbCon=null;
             }
+
+        }
+
+        public function LlistaUsuaris(){
+
+            try{
+                
+                require_once("conexio.php");
+                
+                $cadenaConnexio="mysql:host=".$connexio["servidor"].";dbname=".$connexio['bd'];
+                #echo $cadenaConnexio;
+                $db = new PDO($cadenaConnexio, $connexio["usuari"], $connexio["contrassenya"]);
+                
+                $consulta = $db->prepare("SELECT idUsuarios,username,nombre,email,rol FROM Usuarios");
+                $consulta->execute();
+                                
+                $usuarios = array(); 
+                while($fila=$consulta->fetch()){ 
+                    $usuario["id"]=$fila[0];
+                    $usuario["username"]=$fila[1];
+                    $usuario["nombre"]=$fila[2];
+                    $usuario["email"]=$fila[3];
+                    $usuario["rol"]=$fila[4];
+                    array_push($usuarios, $usuario);
+                }
+                $db=null; 
+                return $usuarios;
+                
+                } catch (Exception $e){ 
+                echo("Error:".$e->getMessage());
+                $db=null;
+                }
         }
 
     }   
